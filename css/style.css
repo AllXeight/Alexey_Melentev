@@ -15,6 +15,7 @@
 body {
     background: url('../img/backgroundWorld.jpg');
     background-size: cover;
+    background-position: center;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -31,7 +32,7 @@ body {
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 65%;
+    width: 60%;
     height: 70vh;
 }
 
