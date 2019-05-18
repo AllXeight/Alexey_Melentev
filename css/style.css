@@ -32,12 +32,20 @@ body {
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 60%;
+    width: 65%;
+    max-width: 1000px;
     height: 70vh;
 }
 
 /*  2-1 - ABOUT */
 
+.photo-profile img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        box-shadow: 0 0 5px rgba(0,0,0,.4);
+    }
 
 /*  2-2 - SKILLS */
 
