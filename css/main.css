@@ -17,9 +17,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;*/   
-    /*background-color: honeydew;*/
+    background-color: honeydew;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;    
+    font-size: 16px;    
     margin: 0px;
     padding: 0px;
 }
