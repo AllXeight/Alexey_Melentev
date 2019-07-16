@@ -16,10 +16,10 @@ body {
     /*background-image: url('../img/backgroundWorld.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;*/
+    height: 100%;*/   
+    /*background-color: honeydew;*/
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
+    font-size: 14px;    
     margin: 0px;
     padding: 0px;
 }
@@ -27,22 +27,22 @@ body {
 .backgroundImg {
     background-image: url('../img/triangles.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;   
     height: 100%;
 }
+
 /*  2-1 - ABOUT */
-
 h2, h4, p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;    
 }
-
 .photo-profile img {
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
-    width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+.buttonDownload {
+    margin: 20px;
 }
 
 .footer-copy img {
