@@ -11,37 +11,41 @@
     <link rel="stylesheet" href="app/css/swiper.min.css">
     <!-- Link Animate CSS -->
     <link href="app/css/animate.css" rel="stylesheet" />
+    <!--Link Color CSS-->
+    <link href="app/css/color.css" rel="stylesheet" />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Cardo|El+Messiri|Libre+Caslon+Text|Martel|Philosopher|Playfair+Display|Rufina&display=swap" rel="stylesheet">
     <!--Link Main CSS-->
     <link href="app/css/main.css" rel="stylesheet" />
 
 </head>
 <body>
-    <ul class="nav nav-pills md-4" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills md-4 navBgColor navbar-custom" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+            <a class="nav-link active navTxtColor" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+            <a class="nav-link navTxtColor" id="skills-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="education-tab" data-toggle="pill" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+            <a class="nav-link navTxtColor" id="education-tab" data-toggle="pill" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="experience-tab" data-toggle="pill" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+            <a class="nav-link navTxtColor" id="experience-tab" data-toggle="pill" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
         
         <!--ABOUT-->
         
-        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="container backgroundAbout rounded border border-dark">
+        <div class="tab-pane fade show active pt-3" id="about" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container backgroundAbout border-custom">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-lg-4">
                         <div class="row photo-profile m-2">
-                            <img src="./app/img/gans.jpg" class="<rounded mx-auto d-block img-thumbnail" alt="Photo" />
+                            <img src="app/img/alexeymelentev.png" class="<rounded mx-auto d-block img-thumbnail" alt="Photo" />
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center mb-3">
                             <div class="col-lg-12 col-md-6 col-sm-8 col-8">
                                 <a href="#" class="btn btn-outline-dark btn-lg btn-block" role="button" aria-pressed="true">Download Resume</a>
                             </div>
@@ -61,15 +65,15 @@
                                 <table class="table table-borderless justify-content-center">
                                     <tbody>
                                         <tr>
-                                            <th scope="row">Age</th>
+                                            <th scope="row">Age:</th>
                                             <td>32</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Address</th>
+                                            <th scope="row">Address:</th>
                                             <td>Zaporizhzhia, Soborniy 133</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Email</th>
+                                            <th scope="row">Email:</th>
                                             <td>meleldorado@gmail.com</td>
                                         </tr>
                                     </tbody>
@@ -79,27 +83,27 @@
                                 <table class="table table-borderless">
                                     <tbody>
                                         <tr>
-                                            <th scope="row">Phone</th>
+                                            <th scope="row">Phone:</th>
                                             <td>+38(096) 728 70 40</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Git</th>
+                                            <th scope="row">Git:</th>
                                             <td>AllXeight</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Skype</th>
+                                            <th scope="row">Skype:</th>
                                             <td>duriccs</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-end mb-4">
                             <div class="footer-copy">
-                                <a href="#"><img src="./app/img/facebook.png"></a>
-                                <a href="#"><img src="./app/img/instagram.png"></a>
-                                <a href="#"><img src="./app/img/telegram.png"></a>
-                                <a href="#"><img src="./app/img/twitter.png"></a>
+                                <a href="https://www.facebook.com/mel.eldorado"><img src="./app/img/facebookTwo.jpg"></a>
+                                <a href="viber://add?number=380967287040"><img src="./app/img/viber.png"></a>
+                                <a href="mailto:meleldorado@gmail.com?subject=Work"><img src="./app/img/gmail.png"></a>
+                                <a href="skype:duriccs?chat"><img src="./app/img/skype.png"></a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +113,7 @@
 
         <!--SKILLS-->
 
-        <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+        <div class="tab-pane fade pt-3" id="skills" role="tabpanel" aria-labelledby="skills-tab">
             <div class="row justify-content-center">
                 <h2 class="text-center animated bounceInLeft">SKILLS</h2>
             </div>
@@ -159,7 +163,7 @@
 
         <!--EDUCATION-->
 
-        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">           
+        <div class="tab-pane fade pt-3" id="education" role="tabpanel" aria-labelledby="education-tab">           
             <div class="row justify-content-center">
                 <h2 class="text-center animated rubberBand">EDUCATION</h2>
             </div>
@@ -192,7 +196,7 @@
 
         <!--EXPIRIENCE-->
 
-        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+        <div class="tab-pane fade pt-3" id="experience" role="tabpanel" aria-labelledby="experience-tab">
             <div class="row justify-content-center">
                 <h2 class="text-center m-2 animated fadeInRightBig">EXPERIENCE</h2>
             </div>
