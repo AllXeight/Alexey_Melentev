@@ -7,124 +7,252 @@
 
     <!-- Link Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="app/css/swiper.min.css">
+    <!-- Link Animate CSS -->
+    <link href="app/css/animate.css" rel="stylesheet" />
     <!--Link Main CSS-->
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="app/css/main.css" rel="stylesheet" />
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#about">Alexey Melentev</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <ul class="nav nav-pills md-4" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="education-tab" data-toggle="pill" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="experience-tab" data-toggle="pill" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        
+        <!--ABOUT-->
+        
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container backgroundAbout rounded border border-dark">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row photo-profile m-2">
+                            <img src="./app/img/gans.jpg" class="<rounded mx-auto d-block img-thumbnail" alt="Photo" />
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 col-md-6 col-sm-8 col-8">
+                                <a href="#" class="btn btn-outline-dark btn-lg btn-block" role="button" aria-pressed="true">Download Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-8">
+                        <h3 class="text-center mt-3 animated fadeInDown">Hi, I'm Alexey Melentev</h3>
+                        <h4 class="text-center m-2 animated pulse">Junior Front-End JavaScript Developer</h4>
+                        <p class="text-justify m-1">
+                            I graduated from the Technical University and I have a degree in Information Systems and Technologies.
+                            I had been working as a system administrator and an information security specialist in enterprises, but there were other specialties as a manager!
+                            Now I am ready for a new challenge, that's why I applied for this position in your company.
+                            I enjoy solving problems, troubleshooting issues, and coming up with solutions in a timely manner.
+                        </p>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <table class="table table-borderless justify-content-center">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Age</th>
+                                            <td>32</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Address</th>
+                                            <td>Zaporizhzhia, Soborniy 133</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email</th>
+                                            <td>meleldorado@gmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 justify-content-center">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Phone</th>
+                                            <td>+38(096) 728 70 40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Git</th>
+                                            <td>AllXeight</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Skype</th>
+                                            <td>duriccs</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="footer-copy">
+                                <a href="#"><img src="./app/img/facebook.png"></a>
+                                <a href="#"><img src="./app/img/instagram.png"></a>
+                                <a href="#"><img src="./app/img/telegram.png"></a>
+                                <a href="#"><img src="./app/img/twitter.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <div class="container backgroundImg">
-        <a name="about"></a>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="row photo-profile">
-                    <img src="img/gans.jpg" class="<rounded mx-auto d-block img-thumbnail" alt="Photo" />
-                </div>
-                <div class="row-sm-6 text-center buttonDownload">
-                    <a href="#" class="btn btn-outline-secondary btn-lg btn-block" role="button" aria-pressed="true">Download Resume</a>
-                </div>
+        <!--SKILLS-->
+
+        <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+            <div class="row justify-content-center">
+                <h2 class="text-center animated bounceInLeft">SKILLS</h2>
             </div>
-            <div class="col-sm-8">
-                <h2 class="text-center">Hi, I'm Alexey Melentev</h2>
-                <h4 class="text-center">Junior Front-End JavaScript Developer</h4>
-                <p class="text-justify">
-                    I graduated from the Technical University and I have a degree in Information Systems and Technologies.
-                    I had been working as a system administrator and an information security specialist in enterprises, but there were other specialties as a manager!
-                    Now I am ready for a new challenge, that's why I applied for this position in your company.
-                    I enjoy solving problems, troubleshooting issues, and coming up with solutions in a timely manner.
-                </p>
+            <div class="container backgroundSkills rounded border border-light">                
                 <div class="row">
-                    <div class="col-sm-6">
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Age</th>
-                                    <td>32</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Address</th>
-                                    <td>Zaporizhzhia, Soborniy 133</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Email</th>
-                                    <td>meleldorado@gmail.com</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-white text-center">PROFESSIONAL SKILLS </h5>
+                        <div>HTML&CSS</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                        <div>Java Script</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                        <div>Bootstrap</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                        <div>GULP</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Phone</th>
-                                    <td>+38(096) 728 70 40</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Git</th>
-                                    <td>AllXeight</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Skype</th>
-                                    <td>duriccs</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 footer-copy">
-                        <a href="#"><img src="img/facebook.png"></a>
-                        <a href="#"><img src="img/instagram.png"></a>
-                        <a href="#"><img src="img/telegram.png"></a>
-                        <a href="#"><img src="img/twitter.png"></a>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-white text-center">ADDITIONAL SKILLS</h5>
+                        <div>English</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                        <div>Creativity</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                        <div>Teamwork</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                        <div>Chess:)</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!--EDUCATION-->
+
+        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">           
+            <div class="row justify-content-center">
+                <h2 class="text-center animated rubberBand">EDUCATION</h2>
+            </div>
+            <div class="education">
+                <div class="container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center text-white border border-white rounded">
+                            <h5 class="m-1">ITVDN - IT school, 2018-2019</h5>
+                            <p class="m-1"> JavaScript Essential Certificate</p>
+                            <p class="m-1">JavaScript Advanced Certificate</p>
+                            <p class="m-1">HTML5 & CSS3 Certificate</p>
+                        </div>
+                        <div class="swiper-slide text-center text-white border border-white rounded">
+                            <h5 class="m-1">Zaporizhia National University, 2012</h5>
+                            <p> Computer Science, Master</p>     
+                            <p class="text-justify m-2">I received this degree in this prestigious institution.
+                            I successfully completed all the tasks and received an average grade in all subjects of 4.6 out of 5.</p>
+                        </div>
+                        <div class="swiper-slide text-center text-white border border-white rounded">
+                            <h5 class="m-1">Zaporizhia National University, 2004-2009</h5>
+                            <p> Application programmer, Specialist</p>
+                            <p class="text-justify m-2">I received this degree in this prestigious institution. 
+                            I successfully completed all the tasks and received an average grade in all subjects of 4.4 out of 5.</p>
+                        </div>                        
+                    </div>                   
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--EXPIRIENCE-->
+
+        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <div class="row justify-content-center">
+                <h2 class="text-center m-2 animated fadeInRightBig">EXPERIENCE</h2>
+            </div>
+            <div class="container backgroundExperience rounded border border-light">
+                <div class="row text-white">
+                    <div class="col-md-3">
+                        <h5 class="text-center m-1">May 2015 - May 2017</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <h6 class="m-1">Leading Data Protection Specialist at Motor-Bank</h6>
+                        <p class="m-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In semper lacus tortor, quis bibendum odio mattis vitae.
+                            Cras porta massa pretium auctor congue. Suspendisse ante massa,
+                            euismod sit amet sem sed, viverra tristique diam.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-white">
+                    <div class="col-md-3">
+                        <h5 class="text-center m-1">Oct 2012 - Dec 2014</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <h6 class="m-1">Security Specialist, Regional Leader at Skvortsovo</h6>
+                        <p class="m-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In semper lacus tortor, quis bibendum odio mattis vitae.
+                            Cras porta massa pretium auctor congue. Suspendisse ante massa,
+                            euismod sit amet sem sed, viverra tristique diam.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-white">
+                    <div class="col-md-3">
+                        <h5 class="text-center m-1">Aug 2009 – Jan 2011</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <h6 class="m-1">Security Systems Specialist at RIST</h6>
+                        <p class="m-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In semper lacus tortor, quis bibendum odio mattis vitae.
+                            Cras porta massa pretium auctor congue. Suspendisse ante massa,
+                            euismod sit amet sem sed, viverra tristique diam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 
     <!--Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- Swiper JS -->
+    <script src="app/js/swiper.min.js"></script>
+
     <!--Main JS-->
-    <script src="js/main.js"></script>
+    <script src="app/js/main.js"></script>
 
 </body>
 </html>
