@@ -22,13 +22,11 @@ font-family: 'Rufina', serif;*/
 }
 
 body {
-    /*background-image: url('../img/backgroundWorld.jpg');
+    background-image: url('../img/triangles.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;*/
-    /*background-color:honeydew;*/
-    background-color: rgb(248, 242, 237);
-    /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+    height: 100%;
+    /*background-color: rgb(248, 242, 237);*/
     margin: 0px;
     padding: 0px;
 }
@@ -57,7 +55,7 @@ body {
     border-radius: 3px 4px;
 }*/
 
-.backgroundAbout, .backgroundSkills {
+.backgroundAbout, .backgroundSkills, .backgroundExperience {
     /*background-image: url('../img/triangles.jpg');*/
     background-image: linear-gradient(rgba(234, 215, 200, 0.9), rgba(248, 242, 237, 0.6), rgba(234, 215, 200,0.9));
     background-repeat: no-repeat;
@@ -122,17 +120,17 @@ th, td {
 
 .progress-bar {
     background-color: rgb(102, 102, 255);
-    color: rgb(248, 242, 237);    
+    color: rgb(248, 242, 237);
 }
 
 .progress {
-    border: 1px solid rgba(95, 87, 81, 0.20);   
+    border: 1px solid rgba(95, 87, 81, 0.20);
 }
 
 /*  3 - EDUCATION */
 
 .education {
-    /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/   
+    /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
     margin: 0;
     padding: 0;
 }
@@ -154,9 +152,9 @@ th, td {
     background-size: cover;
     width: 300px;
     height: 300px;
-    font-weight: bold;   
+    font-weight: bold;
     border: 1px solid white;
-    border-radius: 2px 3px;    
+    border-radius: 2px 3px;
 }
 
     .swiper-slide:hover {
@@ -166,12 +164,13 @@ th, td {
 
 /*  4 - EXPERIENCE */
 
-.backgroundExperience {
+/*.backgroundExperience {
     background-image: linear-gradient(rgba(124,192,63,0.8), rgba(82,173,132,0.8), rgba(84,136,171,0.8), rgba(114,141,122,0.7));
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-}
+}*/
+
 
 /*  5 - PORTFOLIO */
 
