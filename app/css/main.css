@@ -16,7 +16,8 @@ font-family: 'El Messiri', sans-serif;
 font-family: 'Rufina', serif;*/
 
 * {
-    font-family: 'Rufina', serif;
+    /*font-family: 'Rufina', serif;*/
+    font-family: sans-serif;
     color: rgb(77, 0, 0);
     font-size: 16px;
 }
@@ -24,6 +25,8 @@ font-family: 'Rufina', serif;*/
 body {
     background-image: url('../img/triangles.png');
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     height: 100%;
     /*background-color: rgb(248, 242, 237);*/
@@ -121,6 +124,7 @@ th, td {
 .progress-bar {
     background-color: rgb(102, 102, 255);
     color: rgb(248, 242, 237);
+    font-size: 14px;
 }
 
 .progress {
